@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <form action="/food">
+      <div>
+        <label for="Ad">Kullanıcı adı giriniz</label>
+        <input id="Ad" type="text" placeholder="username" />
+      </div>
+
+      <div>
+        <label for="şifre">Şifrenizi giriniz</label>
+        <input id="şifre" type="password" placeholder="password" />
+      </div>
+
+      <div>
+        <label for="renk">Renk seçiniz</label>
+        <input id="renk" type="color" />
+      </div>
+
+      <div>
+        <label for="sayı">Sayı giriniz</label>
+        <input id="sayı" type="number" />
+      </div>
+    </form>
+
+    <hr />
+
+    <form action="https://www.google.com/search">
+      <label for="Ara">Google amcadan ara</label>
+      <input type="text" id="Ara" name="q" />
+      <button>Ara</button>
+    </form>
+    <br />
+    <form action="https://www.youtube.com/results">
+      <label for="youtube">Youtube den ara</label>
+      <input type="text" id="youtube" name="search_query" />
+      <button>Ara</button>
+    </form>
+
+    <hr />
+
+    <h2>Daha Fazla Input</h2>
+
+    <form action="/birds">
+      <p>
+        <label for="xs">XS</label>
+        <input type="radio" name="size" id="xs" value="xs" />
+        <label for="s">S</label>
+        <input type="radio" name="size" id="s" value="s" />
+        <label for="m">M</label>
+        <input type="radio" name="size" id="m" value="m" />
+      </p>
+
+      <p>
+        <label for="animel">Hayvanınızı seçiniz..</label>
+        <select name="animal" id="animal">
+          <option value="fish" selected>Balık</option>
+          <option value="Cat">Kedi</option>
+          <option value="bird">Kuş</option>
+        </select>
+      </p>
+
+      <div>
+        <label for="cheese">Peynnir Toplama</label>
+        <input
+          min="1"
+          max="100"
+          step="10"
+          value="40"
+          type="range"
+          name="cheese"
+          id="cheese"
+        />
+      </div>
+
+      <div>
+        <label for="wish">Özel İstek:</label> <br />
+        <textarea
+          placeholder="Buraya bir şeyler yazın"
+          name="wish"
+          id="wish"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+
+      <button>YOlla</button>
+    </form>
+
+    <form action="/spare">
+        <label for="first">İsim giriniz</label>
+        <input type="text" name="first" id="first" required>
+        <button>Submit</button>
+    </form>
+  </body>
+</html>
